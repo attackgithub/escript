@@ -39,11 +39,11 @@ If you are going to edit ESCRIPT source code, it's recommended to run `Compare C
 ```csharp
 public object CheckIsCore()
 {
-  #if IsCore
+#if IsCore
   return true; // if it's ESCRIPT Core project compiler will use this code
-  #else
+#else
   return false; // if another (Standard) compiler will you use this code
-  #endif
+#endif
 }
 ```
 Not all files will be replaced, only which mentioned in `files.txt`:
